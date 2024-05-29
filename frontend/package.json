@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "watch": "webpack --watch",
-    "build": "webpack --node-env=production",
+    "build": "node api.js && webpack --node-env=production",
     "trace": "webpack --stats-children",
     "debug": "webpack --stats-error-details",
     "lint": "eslint --cache src/ *.js",
